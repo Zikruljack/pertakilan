@@ -1,0 +1,42 @@
+{{ config(
+  materialized='table',
+  schema='public'
+) }}
+
+SELECT 
+id,
+nik,
+tahun,
+tanggal_lahir,
+desil_kesejahteraan,
+resiko_stunting,
+created_at,
+updated_at,
+kemendagri_kode_desa,
+provinsi,
+kabupaten_kota,
+kecamatan,
+desa,
+alamat,
+penerima_sembako,
+padan_dukcapil,
+pekerjaan,
+pendidikan,
+kepemilikan_rumah,
+memiliki_simpanan_uang_perhiasan_ternak_lainnya,
+jenis_atap,
+jenis_dinding,
+jenis_lantai,
+sumber_penerangan,
+bahan_bakar_memasak,
+sumber_air_minum,
+memiliki_fasilitas_buang_air_besar,
+penerima_bpnt,
+penerima_bpum,
+penerima_bst,
+id_keluarga_p3ke,
+kepala_keluarga,
+jenis_kelamin,
+penerima_pkh,
+kemendagri_kode_kabupaten_kota
+FROM public.d_p3ke_keluarga;
